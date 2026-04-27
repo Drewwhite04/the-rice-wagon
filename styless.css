@@ -54,13 +54,37 @@ margin-bottom: 5px;
 
 
 img {
-max-width: 80%;
-height: auto;
-display: block;
-margin: 20px auto;
-border: 3px solid #bfc9c2;
+  width: 300px;       /* fixed size so they fit side-by-side */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #bfc9c2;
 }
 
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* helps on smaller screens */
+}
+
+img:hover {
+  transform: scale(1.10);
+  transition: 0.5s;
+}
+
+.fb-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #1877f2;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.fb-button:hover {
+  background-color: #145dbf;
+}
 
 footer {
 border-top: 4px solid #9aa39d;
